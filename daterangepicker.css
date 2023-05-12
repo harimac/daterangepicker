@@ -7,6 +7,7 @@
   --drp-main-border-color: #ddd;
   --drp-main-border-shadow-color: #ccc;
   --drp-main-background-color-selected: #08c;
+  --drp-time-background-color: #eee;
   --drp-week-text-color: #ccc;
   --drp-weekend-text-color: #ee4646;
   --drp-weekend-text-color-off: #994646;
@@ -128,7 +129,7 @@
 
 .daterangepicker .drp-calendar {
   display: none;
-  max-width: 270px;
+  max-width: 281px;
 }
 
 .daterangepicker .drp-calendar.left {
@@ -265,14 +266,24 @@
   width: 40%;
 }
 
-.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
+.daterangepicker select.hourselect,
+.daterangepicker select.minuteselect,
+.daterangepicker select.secondselect,
+.daterangepicker select.ampmselect {
   width: 50px;
   margin: 0 auto;
-  background: #eee;
-  border: 1px solid #eee;
+  background: var(--drp-time-background-color);
+  border: 1px solid var(--drp-main-border-color);
+  color: var(--drp-main-text-color);
   padding: 2px;
   outline: 0;
   font-size: 12px;
+}
+.daterangepicker select.monthselect,
+.daterangepicker select.yearselect {
+  background: var(--drp-time-background-color);
+  border: 1px solid var(--drp-main-border-color);
+  color: var(--drp-main-text-color);
 }
 
 .daterangepicker .calendar-time {

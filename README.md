@@ -1,6 +1,7 @@
 # Date Range Picker
 
 ![Improvely.com](https://i.imgur.com/UTRlaar.png)
+![Dark Theme](dark-theme.png)
 
 This date range picker component creates a dropdown menu from which a user can
 select a range of dates. I created it while building the UI for [Improvely](http://www.improvely.com), 
