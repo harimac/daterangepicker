@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --drp-main-text-color: #fff;
+    --drp-main-disabled-text-color: #bbb;
+    --drp-main-highlight-text-color: #fff;
+    --drp-main-background-color: #181818;
+    --drp-main-background-color-hover: #2e687f;
+    --drp-main-background-color-selected: #1e586f;
+    --drp-main-border-color: #555;
+    --drp-main-border-shadow-color: #444;
+    --drp-week-text-color: #ccc;
+    --drp-weekend-text-color: #ff4646;
+    --drp-weekend-text-color-off: #992626;
+    --drp-day-text-color-off: #999;
+    --drp-day-text-color-inrange: #fff;
+    --drp-day-background-color-inrange: #637f8b;
+    --drp-day-text-color-selected: #fff;
+  }
+}

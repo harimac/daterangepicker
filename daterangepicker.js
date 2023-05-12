@@ -754,7 +754,7 @@
                 html += '<th class="week">' + this.locale.weekLabel + '</th>';
 
             $.each(this.locale.daysOfWeek, function(index, dayOfWeek) {
-                html += '<th>' + dayOfWeek + '</th>';
+                html += '<th ' +((index===0||index==6) ? 'class="weekend"' : '') + '>' + dayOfWeek + '</th>';
             });
 
             html += '</tr>';
