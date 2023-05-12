@@ -753,8 +753,11 @@
             if (this.showWeekNumbers || this.showISOWeekNumbers)
                 html += '<th class="week">' + this.locale.weekLabel + '</th>';
 
+            var firstDaysOfWeekIndex = this.locale.firstDay;
+            var sundayIdx = (0 - firstDaysOfWeekIndex) < 0 ? 7 - firstDaysOfWeekIndex : 0;
+            var saturdayIdx = 6 - firstDaysOfWeekIndex;
             $.each(this.locale.daysOfWeek, function(index, dayOfWeek) {
-                html += '<th ' +((index===0||index==6) ? 'class="weekend"' : '') + '>' + dayOfWeek + '</th>';
+                html += '<th ' +((index===sundayIdx||index==saturdayIdx) ? 'class="weekend"' : '') + '>' + dayOfWeek + '</th>';
             });
 
             html += '</tr>';
