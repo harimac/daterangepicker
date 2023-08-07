@@ -1357,8 +1357,10 @@
 
             if (this.singleDatePicker) {
                 this.setEndDate(this.startDate);
-                if (!this.timePicker && this.autoApply)
+                if (!this.timePicker && this.autoApply) {
+                    this.calculateChosenLabel(); // [XAM] Fixed not updated label
                     this.clickApply();
+                }
             }
 
             this.updateView();
