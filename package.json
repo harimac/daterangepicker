@@ -5,7 +5,10 @@
   "main": "daterangepicker.js",
   "style": "daterangepicker.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:rollup": "rollup --config",
+    "build:minify": "cleancss -o daterangepicker.min.css daterangepicker.css",
+    "build": "run-s build:*"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,11 @@
     "url": "https://github.com/dangrossman/daterangepicker/issues"
   },
   "homepage": "https://github.com/dangrossman/daterangepicker",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^3.28.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
   "dependencies": {
     "jquery": ">=1.10",
     "moment": "^2.9.0"
